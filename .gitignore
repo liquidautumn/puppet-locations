@@ -1,0 +1,13 @@
+.idea
+.bundle
+.config
+.vagrant
+coverage
+pkg
+rdoc
+spec/reports
+tmp
+metadata.json
+Gemfile.lock
+*.gem
+*.rbc
