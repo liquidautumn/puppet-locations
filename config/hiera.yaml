@@ -2,7 +2,7 @@
 ---
 :hierarchy:
   - %{::clientcert}
-  - %{::location}
-  - %{::client}
   - %{::environment}
+  - %{::client}
+  - %{::location}
   - common
