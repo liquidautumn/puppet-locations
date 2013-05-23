@@ -3,6 +3,6 @@
 :hierarchy:
   - %{::clientcert}
   - %{::environment}
-  - %{::client}
+  - %{::owner}
   - %{::location}
   - common
