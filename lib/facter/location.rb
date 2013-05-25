@@ -1,7 +1,8 @@
-Facter.add("location") do
-  #TODO fetch location name from Hiera based on network address
+require 'ipaddr'
 
-  #setcode do
-  #  Facter::Util::Resolution.exec('/bin/uname -i')
-  #end
+Facter.add("location") do
+  setcode do
+    hiera('locations').each { |name, net| return name if IPAddr.new(net) === Facter.value('ipaddress') }
+    nil
+  end
 end

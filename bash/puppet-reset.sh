@@ -10,6 +10,7 @@ if [ "" == "$PKG_OK" ]; then
   echo "No puppet installed, no removal required."
 else
   sudo apt-get --force-yes --yes --purge remove puppet
+  sudo rm /etc/puppet/puppet.conf
 fi
 
 sudo apt-get --force-yes --yes install puppet

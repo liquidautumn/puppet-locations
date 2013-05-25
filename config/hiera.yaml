@@ -1,8 +1,7 @@
-#The idea is to use Hiera hierarchy for flexible configuration
 ---
 :hierarchy:
   - %{::clientcert}
-  - %{::environment}
-  - %{::owner}
+#  - %{::environment}
+#  - %{::owner}
   - %{::location}
   - common

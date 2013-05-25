@@ -1,6 +1,5 @@
-#Shared configuration
 ---
 #one network per location for the starters
 locations:
-  hw1: 10.0.3.0/24
-  hw2: 10.0.4.0/24
+  nw1: 10.0.3.0/24
+  nw2: 10.0.4.0/24
