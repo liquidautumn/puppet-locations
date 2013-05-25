@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define :nw1_ntp_master do |h|
-    h.vm.hostname = "ntp-master.nw1"
+    h.vm.hostname = "master.nw1"
     h.vm.provider :lxc do |p|
       p.customize 'network.ipv4', '10.0.3.170'
     end
@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define :nw1_ntp_slave do |h|
-    h.vm.hostname = "ntp-slave.nw1"
+    h.vm.hostname = "slave.nw1"
     h.vm.provider :lxc do |p|
       p.customize 'network.ipv4', '10.0.3.171'
     end
@@ -24,14 +24,14 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define :nw2_ntp_master do |h|
-    h.vm.hostname = "ntp-master.nw2"
+    h.vm.hostname = "master.nw2"
     h.vm.provider :lxc do |p|
       p.customize 'network.ipv4', '10.0.4.170'
     end
   end
 
   config.vm.define :nw2_ntp_slave do |h|
-    h.vm.hostname = "ntp-slave.nw2"
+    h.vm.hostname = "slave.nw2"
     h.vm.provider :lxc do |p|
       p.customize 'network.ipv4', '10.0.4.170'
     end
