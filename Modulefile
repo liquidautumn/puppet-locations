@@ -6,5 +6,3 @@ license 'Apache License, Version 2.0'
 summary 'Module for detecting server location by ip address'
 description 'Module for detecting server location by ip address'
 project_page 'https://github.com/liquidautumn/puppet-locations'
-
-dependency 'puppetlabs/ntp'
